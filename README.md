@@ -2,27 +2,23 @@
 
 Add environment variables to your .env file as follows:
 
+```bash 
 <ul>
-    ```bash 
     <li>
     NEXT_PUBLIC_SANITY_PROJECT_ID=
     </li>
-    ```
-    ```bash 
     <li>
     NEXT_PUBLIC_SANITY_DATASET=
     </li>
-    ```
-    ```bash 
     <li>
     NEXT_PUBLIC_SANITY_TOKEN=
     </li>
-    ```
-</ul>
+</ul> 
+```
 
 Run the development server:
 
-```bash
+```bash 
 npm run dev
 # or
 yarn dev
