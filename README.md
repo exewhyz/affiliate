@@ -3,17 +3,15 @@
 Add environment variables to your .env file as follows:
 
 ```bash 
-<ul>
-    <li>
     NEXT_PUBLIC_SANITY_PROJECT_ID=
-    </li>
-    <li>
+```
+
+```bash
     NEXT_PUBLIC_SANITY_DATASET=
-    </li>
-    <li>
-    NEXT_PUBLIC_SANITY_TOKEN=
-    </li>
-</ul> 
+```
+
+```bash   
+    NEXT_PUBLIC_SANITY_TOKEN= 
 ```
 
 Run the development server:
