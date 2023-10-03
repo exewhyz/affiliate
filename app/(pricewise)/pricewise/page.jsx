@@ -4,6 +4,8 @@ import Image from "next/image"
 import { getAllProducts } from "@/lib/actions"
 import ProductCard from "@/components/PriceWise/ProductCard"
 
+export const revalidate = 0;
+
 const Home = async () => {
     const allProducts = await getAllProducts();
 
