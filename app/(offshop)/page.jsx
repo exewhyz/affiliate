@@ -3,6 +3,7 @@ import Content from "../../components/Content";
 import { getCategories, getProductPlaylist, getProducts } from "@/sanity/actions";
 import { Categories } from "@/components/Category";
 import SearchForm from "@/components/SearchForm";
+import Image from "next/image";
 
 export const revalidate = 900;
 
@@ -17,10 +18,9 @@ export default async function Home({ searchParams }) {
   const categories = await getCategories();
 
   return (
-    <main className="flex items-center justify-center px-10 pt-8 pb-5 mx-auto w-full max-w-screen-2xl flex-col">
+    <main className="flex items-center justify-center px-10 pt-8 pb-5 mx-auto w-full max-w-10xl flex-col">
       <section className="w-full">
-        <div className="flex items-center justify-center relative min-h-[274px] w-full flex-col rounded-xl bg-banner bg-contain bg-no-repeat bg-center text-center">
-        </div>
+        <Image className="container" src="/banner.png" width={500} height={274} />
       </section>
       <section className="flex flex-col md:flex-row gap-x-10 gap-y-5 my-5">
         <Categories categories={categories} />

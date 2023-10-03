@@ -24,7 +24,7 @@ import { toast } from "./ui/use-toast";
 
 const Content = (product) => {
     return (
-        <Card className="max-w-[365px] border-0 sm:max-w-[365px]">
+        <Card className="bg-[#F2F4F7] max-w-[365px] border-0 sm:max-w-[365px]">
             <Link href={product.src} className="cursor-pointer" target="_blank">
                 <CardHeader>
                     {product.title.length > 15 ?
@@ -56,8 +56,8 @@ const Content = (product) => {
             </Link >
             <CardFooter className="flex gap-x-1 items-center">
                 <div className="gap-x-2 flex items-center justify-center">
-                    <p className="text-gray-400 line-through text-[11px]">₹{product.actual}</p>
-                    <p className="text-sm">₹{product.sale}</p>
+                    <p className="text-gray-900 line-through text-[11px]">₹{product.actual}</p>
+                    <p className="text-sm text-black">₹{product.sale}</p>
                 </div>
                 <p className="font-bold logo-gradient mx-6 text-sm">
                     {((product.actual - product.sale) * 100 / product.actual).toFixed(0)}% OFF

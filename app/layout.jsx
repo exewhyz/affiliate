@@ -1,9 +1,12 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 
 import { Toaster } from "@/components/ui/toaster";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700']
+})
 
 export const metadata = {
   title: "OffShop | Grab your Deal",
@@ -22,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`min-h-screen background-gradient no-scrollbar ${inter.className}`}>
+      <body className={spaceGrotesk.className}>
         {children}
         <Toaster />
       </body>

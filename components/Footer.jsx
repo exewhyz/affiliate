@@ -20,7 +20,7 @@ export default function Footer() {
                     <Link href={"/"} className="text-3xl bg-clip-text text-transparent font-bold bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-rose-500 to-indigo-700">
                         OffShop
                     </Link>
-                    <p className="mt-2 text-xs text-justify text-gray-400">
+                    <p className="mt-2 text-xs text-justify text-gray-300">
                         OffShop where users can get information about sales, offers, discounts, etc. in different categories.
                     </p>
                     <form className="flex mt-4 text-white" onSubmit={(e) => {

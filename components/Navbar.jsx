@@ -11,14 +11,15 @@ export default function Navbar() {
 
     const menus = [
         { title: "Home", path: "/" },
+        { title: "PriceWise", path: "/pricewise" },
     ]
 
     return (
         <nav className="w-full border-b-1 md:border-0 sticky top-0 z-50 backdrop-filter backdrop-blur-lg shadow-md">
             <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
-                <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                <div className="flex items-center justify-between py-3 md:py-5">
                     <Link href="/">
-                        <Image src="/logo.png" alt="logo" width={150} height={100} className="w-44 h-10"/>
+                        <Image src="/logo.png" alt="logo" width={100} height={30} className="w-35 h-8" />
                     </Link>
                     <div className="md:hidden">
                         <button

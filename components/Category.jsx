@@ -19,12 +19,10 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-import { categories } from "@/constants/category"
-
 import { cn } from "@/lib/utils"
 import { formUrlQuery } from "@/sanity/utils";
 
-export function Categories({categories}) {
+export function Categories({ categories }) {
   const [open, setOpen] = useState(false)
   const [value, setValue] = useState("");
 
@@ -59,7 +57,7 @@ export function Categories({categories}) {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="text-gray-500 w-[200px] justify-between text-md capitalize"
+          className="bg-[#F2F4F7] text-gray-500 w-[200px] justify-between text-md capitalize"
         >
           {value
             ? categories.find((category) => category.title.toLowerCase() === value)?.title
